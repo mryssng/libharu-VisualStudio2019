@@ -14,7 +14,7 @@ The directory structure is here.
     └─ zlib-1.2.11                      # zlib
 
 It required that libpng and zlib has built with VS2019.
-Reference: [Building libpng with Visual Studio 2019](https://gist.github.com/mryssng/98873a1588bfdae738dfb28a704c1522)
+Reference: [Building libpng with Visual Studio 2019](https://github.com/mryssng/libpng-VisualStudio2019)
 
 ## Build libharu
 
