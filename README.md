@@ -9,10 +9,11 @@ It required that libpng and zlib has been built with VS2019.
 Reference: [Building libpng with Visual Studio 2019](https://github.com/mryssng/libpng-VisualStudio2019)
 
 The required directory structure is here.
-        libharu-VisualStudio2019            # root for building
-        ├─ libharu-RELEASE_2_3_0            # libharu
-        ├─ lpng1637                         # libpng (NOT included in this repository)
-        └─ zlib-1.2.11                      # zlib (NOT included in this repository)
+
+	    libharu-VisualStudio2019/             # root for building
+	    ├─ libharu-RELEASE_2_3_0/             # libharu
+	    ├─ lpng1637/                          # libpng (NOT included in this repository)
+	    └─ zlib-1.2.11/                       # zlib (NOT included in this repository)
     
 ## Build libharu
 
