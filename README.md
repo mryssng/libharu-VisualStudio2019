@@ -59,7 +59,7 @@ Copy "libpng16.lib" and "zlib.lib" from "libpng-VisualStudio2019\lpng1637\projec
    ```
     The directory structure after building is here.
 
-	    build/ 
+	    libharu-VisualStudio2019/ 
 	    ├─ libharu-RELEASE_2_3_0/ 
 	    │   ├─ cmake/ 
 	    │   ├─ demo/ 
