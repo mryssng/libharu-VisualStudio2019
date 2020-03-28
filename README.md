@@ -5,25 +5,23 @@
  - zlib ver1.2.11: [https://zlib.net/](https://zlib.net/)
  - libping ver1.6.37: [http://www.libpng.org/pub/png/libpng.html](http://www.libpng.org/pub/png/libpng.html)
 
-Unzip these files in directory "build".
-The directory structure is here.
-
-    build                               # root for bulding
-    ├─ libharu-RELEASE_2_3_0            # libharu
-    ├─ lpng1637                         # libpng
-    └─ zlib-1.2.11                      # zlib
-
-It required that libpng and zlib has built with VS2019.
+It required that libpng and zlib has been built with VS2019.
 Reference: [Building libpng with Visual Studio 2019](https://github.com/mryssng/libpng-VisualStudio2019)
 
+The required directory structure is here.
+        libharu-VisualStudio2019            # root for building
+        ├─ libharu-RELEASE_2_3_0            # libharu
+        ├─ lpng1637                         # libpng (NOT included in this repository)
+        └─ zlib-1.2.11                      # zlib (NOT included in this repository)
+    
 ## Build libharu
 
  1. **Copy libpng and zlib**<br>
    libpng:
-Copy "libpng16.lib" and "zlib.lib" from "build\lpng1637\projects\vstudio\x64\Release Library" to "build\libharu-RELEASE_2_3_0"
+Copy "libpng16.lib" and "zlib.lib" from "libpng-VisualStudio2019\lpng1637\projects\vstudio\x64\Release Library" to "libharu-VisualStudio2019\libharu-RELEASE_2_3_0"
 
  2. **Edit Script**<br>
-  Open file "build\libharu-RELEASE_2_3_0\script\Makefile.msvc_dll".<br>
+  Open file "libharu-VisualStudio2019\libharu-RELEASE_2_3_0\script\Makefile.msvc_dll".<br>
   Edit as below.
      * Line #14
      `PNG_PREFIX   = ../../libpng`
